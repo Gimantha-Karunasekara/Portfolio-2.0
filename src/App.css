@@ -141,9 +141,10 @@ ul{
     list-style: none;
 }
 
-a{
+a, button{
     text-decoration: none;
     color: var(--text-color);
+    font-size: 1rem;
 }
 
 img{
@@ -210,10 +211,19 @@ img{
     padding: 1rem;
     border-radius: 0.5rem;
     font-weight: var(--font-medium-weight);
+    transition: all .1s;
+    border: 0;
 }
 
 .button:hover{
     background-color: var(--first-color-alt);
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .2); 
+}
+
+.button:active{
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2); 
 }
 
 .button__icon{

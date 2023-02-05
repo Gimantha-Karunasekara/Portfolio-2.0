@@ -1,6 +1,6 @@
 import React from 'react'
 import './Home.css';
-import home_light_img from '../assets/img/home.svg';
+import home_light_img from '../../assets/img/home.svg';
 import Typed from 'typed.js';
 
 const Home = () => {
