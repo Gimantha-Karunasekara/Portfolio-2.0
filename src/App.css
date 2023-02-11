@@ -28,6 +28,7 @@ html{
     --container-color: #fff;
     --scroll-bar-color: hsl(250, 12%, 90%); 
     --scroll-thumb-color: hsl(250, 12%, 80%); 
+    --btn-shadow-color: rgba( 0, 0, 0, .2); 
 
     /* fonts */
 
@@ -79,6 +80,7 @@ body.dark-theme{
     --container-color: hsl(250, 29%, 16%);
     --scroll-bar-color: hsl(250, 12%, 48%); 
     --scroll-thumb-color: hsl(250, 12%, 36%); 
+    --btn-shadow-color: rgba(193, 182, 252, .5); 
 }
 
 /* custom scroll bar  */
@@ -108,7 +110,7 @@ body.dark-theme{
     color: var(--first-color);
 }
 
-.uil-sun:hover{
+.change-theme.uil-sun:hover{
     color: yellow;
 }
 
@@ -145,6 +147,10 @@ a, button{
     text-decoration: none;
     color: var(--text-color);
     font-size: 1rem;
+}
+
+textarea{
+    resize: none;
 }
 
 img{
@@ -218,7 +224,7 @@ img{
 .button:hover{
     background-color: var(--first-color-alt);
     transform: translateY(-4px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, .2); 
+    box-shadow: 0 10px 20px var(--btn-shadow-color); 
 }
 
 .button:active{

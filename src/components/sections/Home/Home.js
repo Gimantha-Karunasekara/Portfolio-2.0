@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './Home.css';
 import home_light_img from '../../assets/img/home.svg';
+import home_dark_img from '../../assets/img/home-dark.svg';
 import Typed from 'typed.js';
+import { ThemeContext } from '../../../context/theme-context';
 
 const Home = () => {
+
+    const {darkTheme} = useContext(ThemeContext);
 
     const el = React.useRef(null);
     const typed = React.useRef(null);
@@ -49,7 +53,7 @@ const Home = () => {
                     </div>
 
                     <div className="home__img">
-                        <img src={home_light_img} alt="" className="home__img" id="home-img" />
+                        <img src={darkTheme ? home_dark_img : home_light_img} alt="" className="home__img" id="home-img" />
                     </div>
 
                     <div className="home__data">

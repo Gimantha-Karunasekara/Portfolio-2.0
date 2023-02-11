@@ -1,3 +1,9 @@
+.error-text{
+    font-size: .9rem;
+    color: rgba(255, 34, 0, 0.753);
+    margin-left: .5rem;
+}
+
 .contact{
     margin: 0;
     margin-block: 1.5rem;

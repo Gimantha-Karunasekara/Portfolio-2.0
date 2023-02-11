@@ -13,7 +13,7 @@ const About = () => {
                 <img src={about_img} alt="" className="about__img"/>
                 <div className="about__data">
                     <p className="about__description">
-                        I am Gimantha Karunasekara, currently I am a student in Curtin Colombo University pursuing a Software Engineering undergraduate degree.
+                        I am Gimantha Karunasekara, currently a student in Curtin Colombo University pursuing a Software Engineering undergraduate degree.
                         Would define my self as a very friendly and helpful person who have ability to work with different people. Seeking for
                         opertunities and learning new things is what I enjoy.
                         I am interested in mobile application development, web application development and related technologies.

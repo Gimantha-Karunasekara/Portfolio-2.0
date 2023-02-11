@@ -1,9 +1,19 @@
-import React, { useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
+import { ThemeContext } from '../../context/theme-context';
+import { Link, Events } from 'react-scroll';
+import * as Scroll from "react-scroll";
 import './NavBar.css';
 
 const NavBar = () => {
 
     const [showNav, setShowNav] = useState(false);
+    const [shadow, setShadow] = useState(false);
+    const { darkTheme, toggleTheme } = useContext(ThemeContext);
+    let scrollSpy = Scroll.scrollSpy;
+
+    useEffect(() => {
+        scrollSpy.update();
+    })
 
     const showNavHandler = () => {
         setShowNav(true);
@@ -13,69 +23,54 @@ const NavBar = () => {
         setShowNav(false);
     }
 
+    const navBarShadowHandler = () => {
+        if (window.scrollY >= 80) {
+            setShadow(true);
+        }
+        else {
+            setShadow(false);
+        }
+        scrollSpy.update();
+    };
 
-    // const navMenu = document.getElementById('nav-menu'),
-    //     navToggle = document.getElementById('nav-toggle'),
-    //     navClose = document.getElementById('nav-close')
-
-    // // SHOW/Toggle NavBar
-    // if (navToggle) {
-    //     navToggle.addEventListener('click', () => {
-    //         navMenu.classList.add('show-menu')
-    //     })
-    // }
-
-    // // Close nav
-    // if (navClose) {
-    //     navClose.addEventListener('click', () => {
-    //         navMenu.classList.remove('show-menu')
-    //     })
-    // }
-
-    // // Hide nav items when selected
-    // const navLink = document.querySelectorAll('.nav__link')
-
-    // navLink.forEach(n => n.addEventListener('click', () => {
-    //     const navMenu = document.getElementById('nav-menu')
-    //     navMenu.classList.remove('show-menu')
-    // }))
+    window.addEventListener("scroll", navBarShadowHandler);
 
     return (
-        <header className="header" id="header">
-            <nav className="nav container">
+        <header className={`header ${shadow && "header-shadow"}`} id="header">
+            <nav className="nav container ">
                 <a href="#home" className="nav__logo">Gimantha</a>
 
                 <div className={`nav__menu ${showNav && "show-menu"}`} id="nav-menu">
                     <ul className="nav__list grid">
                         <li className="nav__item">
-                            <a href="#home" className="nav__link active-link">
+                            <Link activeClass='active-link' spy={true} to="home" className="nav__link">
                                 <i className="uil uil-home nav__icon"></i> Home
-                            </a>
+                            </Link>
                         </li>
                         <li className="nav__item">
-                            <a href="#about" className="nav__link">
+                            <Link activeClass='active-link' spy={true} to="about" className="nav__link">
                                 <i className="uil uil-user nav__icon"></i> About
-                            </a>
+                            </Link>
                         </li>
                         <li className="nav__item">
-                            <a href="#skills" className="nav__link">
-                                <i className="uil uil-file-bookmark-alt nav__icon"></i> Skills
-                            </a>
-                        </li>
-                        <li className="nav__item">
-                            <a href="#qualification" className="nav__link">
+                            <Link activeClass='active-link' spy={true} to="qualification" className="nav__link">
                                 <i className="uil uil-award nav__icon"></i> Qualifications
-                            </a>
+                            </Link>
                         </li>
                         <li className="nav__item">
-                            <a href="#portfolio" className="nav__link">
+                            <Link activeClass='active-link' spy={true} to="skills" className="nav__link">
+                                <i className="uil uil-file-bookmark-alt nav__icon"></i> Skills
+                            </Link>
+                        </li>
+                        <li className="nav__item">
+                            <Link activeClass='active-link' spy={true} to="portfolio" className="nav__link">
                                 <i className="uil uil-bag-alt nav__icon"></i> Portfolio
-                            </a>
+                            </Link>
                         </li>
                         <li className="nav__item">
-                            <a href="#contact" className="nav__link">
+                            <Link activeClass='active-link' spy={true} to="contact" className="nav__link">
                                 <i className="uil uil-envelope nav__icon"></i> Contact Me
-                            </a>
+                            </Link>
                         </li>
                     </ul>
                     <i className="uil uil-times nav__close" id="nav-close" onClick={hideNavHandler}></i>
@@ -83,7 +78,7 @@ const NavBar = () => {
 
                 <div className="nav__btns">
 
-                    <i className="uil uil-moon change-theme" id="theme-button"></i>
+                    <i className={`uil change-theme ${!darkTheme ? 'uil-moon' : 'uil-sun'}`} id="theme-button" onClick={toggleTheme}></i>
 
                     <div className="nav__toggle" id="nav-toggle" onClick={showNavHandler}>
                         <i className="uil uil-bars"></i>

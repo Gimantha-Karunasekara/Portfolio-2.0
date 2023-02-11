@@ -48,6 +48,10 @@
     color: var(--first-color);
 }
 
+.nav__link:hover{
+    cursor: pointer;
+}
+
 .nav__toggle{
     font-size: 1.1rem;
     cursor: pointer;
@@ -121,7 +125,7 @@
 }
 
 .active-link{
-    color: var(--first-color);
+    color: var(--first-color) !important;
 }
 
 /* small  */

@@ -1,5 +1,4 @@
 import './App.css';
-import { Fragment } from 'react';
 import NavBar from './components/nav/NavBar';
 import Home from './components/sections/Home/Home';
 import About from './components/sections/About/About';
@@ -7,20 +6,38 @@ import Qualifications from './components/sections/Qualifications/Qualifications'
 import Skills from './components/sections/Skills/Skills';
 import Portfolio from './components/sections/Portfolio/Portfolio';
 import Contact from './components/sections/Contact/Contact';
+import Footer from './components/footer/Footer';
+import ThemeContextProvider from './context/theme-context';
+import { Element } from 'react-scroll';
 
 function App() {
+
+
   return (
-    <Fragment>
-      <NavBar/>
-      <main className='main'>
-        <Home />
-        <About/>
-        <Qualifications/>
-        <Skills/>
-        <Portfolio/>
-        <Contact/>
-      </main>
-    </Fragment>
+      <ThemeContextProvider>
+        <NavBar />
+        <main className='main dark-theme'>
+          <Element name='home'>
+            <Home />
+          </Element>
+          <Element name='about'>
+            <About />
+          </Element>
+          <Element name='qualifications'>
+            <Qualifications />
+          </Element>
+          <Element name='skills'>
+            <Skills />
+          </Element>
+          <Element name='portfolio'>
+            <Portfolio />
+          </Element>
+          <Element name='contact'>
+            <Contact />
+          </Element>
+          <Footer />
+        </main>
+      </ThemeContextProvider>
   );
 }
 
