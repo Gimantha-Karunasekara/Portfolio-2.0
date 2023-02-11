@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { ThemeContext } from '../../context/theme-context';
-import { Link, Events } from 'react-scroll';
+import { Link } from 'react-scroll';
 import * as Scroll from "react-scroll";
 import './NavBar.css';
 
