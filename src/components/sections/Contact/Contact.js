@@ -124,7 +124,6 @@ const Contact = () => {
     }
 
     const sendEmail = () => {
-        console.log(process.env.EMAIL_TOKEN+ "\n" + process.env.EMAIL_TO + "\n" + process.env.EMAIL_FROM )
         window.Email.send({
             SecureToken: process.env.REACT_APP_EMAIL_TOKEN,
             To: process.env.REACT_APP_EMAIL_TO,
