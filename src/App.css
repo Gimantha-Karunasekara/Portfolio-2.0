@@ -28,7 +28,8 @@ html{
     --container-color: #fff;
     --scroll-bar-color: hsl(250, 12%, 90%); 
     --scroll-thumb-color: hsl(250, 12%, 80%); 
-    --btn-shadow-color: rgba( 0, 0, 0, .2); 
+    --shadow-color: rgba( 0, 0, 0, .2); 
+    --card-color: #fff;
 
     /* fonts */
 
@@ -80,7 +81,8 @@ body.dark-theme{
     --container-color: hsl(250, 29%, 16%);
     --scroll-bar-color: hsl(250, 12%, 48%); 
     --scroll-thumb-color: hsl(250, 12%, 36%); 
-    --btn-shadow-color: rgba(193, 182, 252, .5); 
+    --shadow-color: rgba(193, 182, 252, .5); 
+    --card-color: hsl(250, 30%, 8%);
 }
 
 /* custom scroll bar  */
@@ -221,10 +223,11 @@ img{
     border: 0;
 }
 
+
 .button:hover{
     background-color: var(--first-color-alt);
     transform: translateY(-4px);
-    box-shadow: 0 10px 20px var(--btn-shadow-color); 
+    box-shadow: 0 10px 20px var(--shadow-color); 
 }
 
 .button:active{
@@ -252,6 +255,23 @@ img{
 .button--flex{
     display: inline-flex;
     align-items: center;
+}
+
+.button--alt{
+    display: inline-block;
+    background-color: #fff;
+    color: var(--first-color-alt);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-weight: var(--font-medium-weight);
+    transition: all .1s;
+    border: 0;
+}
+
+.button--alt:hover{
+    background-color: #eee;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 10px var(--shadow-color); 
 }
 
 @media screen and (max-width: 350px) {

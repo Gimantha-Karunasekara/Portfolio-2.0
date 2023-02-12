@@ -1,6 +1,4 @@
-import React from 'react'
-import { Navigation, Pagination } from 'swiper';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import React from 'react';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -9,14 +7,47 @@ import './Portfolio.css';
 
 import foodies_img from '../../assets/img/portfolio/foodies.svg';
 import portfolio_img from '../../assets/img/portfolio/website.svg';
+import Card from '../../common/Card';
+import SlideShow from '../../common/SlideShow';
+
+const portfolio_data = [
+  {
+    title: "Foodies",
+    desc: "Java based food ordering Android application which is feature-rich and adaptable to any device form factor.",
+    img: foodies_img,
+    github: "https://github.com/Gimantha-Karunasekara/Foodies"
+  },
+  {
+    title: "Foodies",
+    desc: "Java based food ordering Android application which is feature-rich and adaptable to any device form factor.",
+    img: foodies_img,
+    github: "https://github.com/Gimantha-Karunasekara/Foodies"
+  },
+  {
+    title: "Foodies",
+    desc: "Java based food ordering Android application which is feature-rich and adaptable to any device form factor.",
+    img: foodies_img,
+    github: "https://github.com/Gimantha-Karunasekara/Foodies"
+  }
+];
 
 
 const Portfolio = () => {
 
+  let limit = 3;
+
   return (
     <section className="portfolio section" id="portfolio">
+
       <h2 className="section__title">Portfolio</h2>
       <span className="section__subtitle">My recent work</span>
+
+      <div className='portfolio__container'>
+        <SlideShow data={portfolio_data} limit={limit}/>
+      </div>
+
+
+      {/* 
 
       <div className='swiper-container'>
 
@@ -75,7 +106,7 @@ const Portfolio = () => {
           <i className="uil uil-angle-left-b swiper-portfolio-icon"></i>
         </div>
         <div className="swiper-pagination"></div>
-      </div>
+      </div> */}
     </section>
   )
 }
