@@ -1,14 +1,10 @@
-import React, { Fragment, useEffect, useLayoutEffect, useState } from 'react'
-import Card from './Card';
+import React, { useEffect, useLayoutEffect, useState } from 'react'
 import './SlideShow.css';
 
 const SlideShow = (props) => {
 
     const [limit, setLimit] = useState(1);
-    const [cards, setCards] = useState([]);
     const [slideRange, setSlideRange] = useState({ from: 0, to: 1 });
-
-    let lowerLimit = 0;
 
     useLayoutEffect(() => {
         function updateSize() {
@@ -108,10 +104,6 @@ const SlideShow = (props) => {
             }
         }
     };
-
-    useEffect(() => {
-        setCards([...props.data])
-    }, [props.data])
 
     return (
         <div className='slideshow'>
