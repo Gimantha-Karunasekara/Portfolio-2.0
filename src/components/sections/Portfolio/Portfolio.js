@@ -29,7 +29,7 @@ const portfolio_data = [
     title: "Portfolio 2.0 (React)",
     desc: "Portfolio website made using react.js",
     img: portfolio_img,
-    github: ""
+    github: "https://github.com/Gimantha-Karunasekara/Portfolio-2.0"
   }
 ];
 
