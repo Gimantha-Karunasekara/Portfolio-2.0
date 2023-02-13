@@ -7,34 +7,36 @@ import './Portfolio.css';
 
 import foodies_img from '../../assets/img/portfolio/foodies.svg';
 import portfolio_img from '../../assets/img/portfolio/website.svg';
-import Card from '../../common/Card';
 import SlideShow from '../../common/SlideShow';
 
 const portfolio_data = [
   {
+    key: "001",
     title: "Foodies",
     desc: "Java based food ordering Android application which is feature-rich and adaptable to any device form factor.",
     img: foodies_img,
     github: "https://github.com/Gimantha-Karunasekara/Foodies"
   },
   {
-    title: "Foodies",
-    desc: "Java based food ordering Android application which is feature-rich and adaptable to any device form factor.",
-    img: foodies_img,
-    github: "https://github.com/Gimantha-Karunasekara/Foodies"
+    key: "002",
+    title: "Portfolio website",
+    desc: " Responsive personal portfolio website made using HTML, CSS and Javascript.",
+    img: portfolio_img,
+    github: "https://github.com/Gimantha-Karunasekara/Portfolio-1.0"
   },
   {
-    title: "Foodies",
-    desc: "Java based food ordering Android application which is feature-rich and adaptable to any device form factor.",
-    img: foodies_img,
-    github: "https://github.com/Gimantha-Karunasekara/Foodies"
+    key: "003",
+    title: "Portfolio 2.0 (React)",
+    desc: "Portfolio website made using react.js",
+    img: portfolio_img,
+    github: ""
   }
 ];
 
 
 const Portfolio = () => {
 
-  let limit = 3;
+  
 
   return (
     <section className="portfolio section" id="portfolio">
@@ -43,9 +45,8 @@ const Portfolio = () => {
       <span className="section__subtitle">My recent work</span>
 
       <div className='portfolio__container'>
-        <SlideShow data={portfolio_data} limit={limit}/>
+        <SlideShow data={portfolio_data}/>
       </div>
-
 
       {/* 
 

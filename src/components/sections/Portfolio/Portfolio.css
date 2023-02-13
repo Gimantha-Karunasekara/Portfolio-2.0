@@ -1,12 +1,10 @@
 .portfolio{
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
 }
 
-.portfolio__container{
-    max-width: 80rem;
-    height: 35rem;
-    margin: 5rem auto;
-    border-radius: 1rem;
+@media screen and (max-width: 768px) {
+    .portfolio{
+        width: 99%;
+    }
 }
-

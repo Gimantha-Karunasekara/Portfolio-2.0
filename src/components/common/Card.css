@@ -1,3 +1,4 @@
+
 .portfolio__card::after{
     content: "";
     display: table;
@@ -11,7 +12,7 @@
     -moz-perspective: 150rem;
 
     box-sizing: border-box;
-    height: 35rem;
+    height: 28rem;
     float: left;
     
     text-align: center;
@@ -28,7 +29,7 @@
     left: 0;
     backface-visibility: hidden;
     overflow: hidden;
-    height: 35rem;
+    height: 28rem;
     width: 100%;
     border-radius: 1rem;
     box-shadow: 0 1.5rem 4rem var(--shadow-color);
@@ -43,7 +44,7 @@
 
 .portfolio__img{
    background-size: cover;
-   background-image: url(../assets/img/portfolio/foodies.svg); 
+   background-position: center;
    height: 13rem;
 }
 
@@ -58,7 +59,6 @@
 
 
 .portfolio__card--back{
-
     background-image: linear-gradient(to bottom ,var(--first-color), var(--first-color-lighter));
     transform: rotateY(180deg);
     align-items: center;
@@ -66,11 +66,11 @@
 }
 
 .portfolio__card:hover .portfolio__card--front{
-    transform: rotateY(-180deg);
+    transform: rotateY(-180deg) translateY(-10px);
 }
 
 .portfolio__card:hover .portfolio__card--back{
-    transform: rotateY(0deg);
+    transform: rotateY(0deg) translateY(-10px);
 }
 
 .portfolio__button{
@@ -85,6 +85,24 @@
     transform: translate(-50%, -55%);
 }
 
+
 .portfolio__button:active{
     transform: translate(-50%, -51%);
+}
+
+
+@media screen and (min-width: 768px){
+    .portfolio__card{
+        height: 30rem;
+    }
+
+    .portfolio__card-side{
+        height: 30rem ; 
+    }
+
+    .portfolio__img{
+        height: 14rem;
+
+    }
+
 }
