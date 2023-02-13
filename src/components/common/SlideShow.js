@@ -1,4 +1,5 @@
-import React, { useEffect, useLayoutEffect, useState } from 'react'
+import React, {useLayoutEffect, useState } from 'react'
+import Card from './Card';
 import './SlideShow.css';
 
 const SlideShow = (props) => {
