@@ -66,6 +66,7 @@
 }
 
 .portfolio__card:hover .portfolio__card--front{
+    filter: blur(5px);
     transform: rotateY(-180deg) translateY(-10px);
 }
 
