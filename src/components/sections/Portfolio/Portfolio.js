@@ -7,6 +7,8 @@ import './Portfolio.css';
 
 import foodies_img from '../../assets/img/portfolio/foodies.svg';
 import portfolio_img from '../../assets/img/portfolio/website.svg';
+import myList_img from '../../assets/img/portfolio/mylist.svg'
+
 import SlideShow from '../../common/SlideShow';
 
 const portfolio_data = [
@@ -26,10 +28,10 @@ const portfolio_data = [
   },
   {
     key: "003",
-    title: "Portfolio 2.0 (React)",
-    desc: "Portfolio website made using react.js",
-    img: portfolio_img,
-    github: "https://github.com/Gimantha-Karunasekara/Portfolio-2.0"
+    title: "MyList",
+    desc: "Simple to-do list app to keep track of your tasks. Tech stack used : MERN.",
+    img: myList_img,
+    github: "https://github.com/Gimantha-Karunasekara/MyList"
   }
 ];
 

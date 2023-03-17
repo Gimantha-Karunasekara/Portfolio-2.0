@@ -1,7 +1,9 @@
 import React from 'react'
 
 import './About.css';
+
 import about_img from '../../assets/img/about.svg';
+import cv from '../../assets/cv.pdf';
 
 const About = () => {
   return (
@@ -32,7 +34,7 @@ const About = () => {
                     </div>
 
                     <div className="about__button">
-                        <a download="" href="../../assets/cv.pdf" className="button button--flex">
+                        <a download href={cv} className="button button--flex">
                             Download CV <i className="uil uil-cloud-download button__icon"></i>
                         </a>
                     </div>
