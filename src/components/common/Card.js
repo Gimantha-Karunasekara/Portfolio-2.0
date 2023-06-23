@@ -17,10 +17,14 @@ const Card = (props) => {
                     </p>
                 </div>
                 <div className='portfolio__card-side portfolio__card--back'>
-                    <a href={props.github} className="button--alt button--flex button--small portfolio__button">
+                    {props.github && <a href={props.github} className="button--alt button--flex button--small portfolio__button">
                         View
                         <i className="uil uil-github-alt button__icon"></i>
-                    </a>
+                    </a>}
+                    {props.visit && <a href={props.visit} className="button--alt button--flex button--small portfolio__button">
+                        Visit
+                        <i className="uil uil-globe button__icon"></i>
+                    </a>}
                 </div>
             </div> 
     )

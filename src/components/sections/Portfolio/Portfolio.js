@@ -8,30 +8,40 @@ import './Portfolio.css';
 import foodies_img from '../../assets/img/portfolio/foodies.svg';
 import portfolio_img from '../../assets/img/portfolio/website.svg';
 import myList_img from '../../assets/img/portfolio/mylist.svg'
+import ccet_img from '../../assets/img/portfolio/ccet.svg';
 
 import SlideShow from '../../common/SlideShow';
 
 const portfolio_data = [
   {
     key: "001",
-    title: "Foodies",
-    desc: "Java based food ordering Android application which is feature-rich and adaptable to any device form factor.",
-    img: foodies_img,
-    github: "https://github.com/Gimantha-Karunasekara/Foodies"
+    title: "Ticketing System (Frontend)",
+    desc: "Frontend of Ticketing system made for Curtin Colombo Events Team. Book tickets, scan QR, admin dashboard and more.",
+    img: ccet_img,
+    visit: "https://ccet-ticketing.netlify.app/"
   },
   {
     key: "002",
-    title: "Portfolio website",
-    desc: " Responsive personal portfolio website made using HTML, CSS and Javascript.",
-    img: portfolio_img,
-    github: "https://github.com/Gimantha-Karunasekara/Portfolio-1.0"
-  },
-  {
-    key: "003",
     title: "MyList",
     desc: "Simple to-do list app to keep track of your tasks. Tech stack used : MERN.",
     img: myList_img,
     github: "https://github.com/Gimantha-Karunasekara/MyList"
+    
+  },
+  {
+    key: "003",
+    title: "Foodies",
+    desc: "Java based food ordering Android application which is feature-rich and adaptable to any device form factor.",
+    img: foodies_img,
+    github: "https://github.com/Gimantha-Karunasekara/Foodies"
+    
+  },
+  {
+    key: "004",
+    title: "Portfolio website",
+    desc: " Responsive personal portfolio website made using HTML, CSS and Javascript.",
+    img: portfolio_img,
+    github: "https://github.com/Gimantha-Karunasekara/Portfolio-1.0"
   }
 ];
 

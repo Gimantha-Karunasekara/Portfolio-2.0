@@ -119,6 +119,7 @@ const SlideShow = (props) => {
                         desc={p.desc}
                         img={p.img}
                         github={p.github}
+                        visit={p.visit}
                         limit={limit}
                     />);
                 })}
