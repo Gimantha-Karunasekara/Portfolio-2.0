@@ -9,6 +9,7 @@ import foodies_img from '../../assets/img/portfolio/foodies.svg';
 import portfolio_img from '../../assets/img/portfolio/website.svg';
 import myList_img from '../../assets/img/portfolio/mylist.svg'
 import ccet_img from '../../assets/img/portfolio/ccet.svg';
+import qr_ticket_page from '../../assets/img/portfolio/qrTicketPage.png';
 
 import SlideShow from '../../common/SlideShow';
 
@@ -38,6 +39,13 @@ const portfolio_data = [
   },
   {
     key: "004",
+    title: "Animated QR Ticket Page",
+    desc: "Animated QR ticket page made using pure HTML, CSS and Javascript.",
+    img: qr_ticket_page,
+    github: "https://github.com/Gimantha-Karunasekara/QR-Ticket-Page"
+  },
+  {
+    key: "005",
     title: "Portfolio website",
     desc: " Responsive personal portfolio website made using HTML, CSS and Javascript.",
     img: portfolio_img,

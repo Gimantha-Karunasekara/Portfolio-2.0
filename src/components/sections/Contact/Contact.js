@@ -163,7 +163,7 @@ const Contact = () => {
                             <i className="uil uil-phone contact__icon"></i>
                             <div>
                                 <h3 className="contact__title">Call Me</h3>
-                                <span className="contact__subtitle">+9470348437</span>
+                                <span className="contact__subtitle">+94767249427</span>
                             </div>
                         </div>
                         <div className="contact__information">
