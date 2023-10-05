@@ -3,7 +3,7 @@ import React from 'react'
 import './About.css';
 
 import about_img from '../../assets/img/about.svg';
-import cv from '../../assets/CV.pdf';
+import cv from '../../assets/cv.pdf';
 
 const About = () => {
   return (
