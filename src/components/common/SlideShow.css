@@ -46,3 +46,9 @@
     margin: 5rem auto;
     border-radius: 1rem;
 }
+
+@media screen and (max-width: 768px){
+    .slideshow{
+        padding: 0 3rem;
+    }
+}
