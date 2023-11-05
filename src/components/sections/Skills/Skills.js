@@ -52,7 +52,7 @@ const Skills = () => {
                                 <div className="skills__data">
                                     <div className="skills__title">
                                         <h3 className="skills__name">HTML</h3>
-                                        <span className="skills__number">50%</span>
+                                        <span className="skills__number">80%</span>
                                     </div>
                                     <div className="skills__bar">
                                         <span className="skills__precentage skills__html"> </span>
@@ -61,7 +61,7 @@ const Skills = () => {
                                 <div className="skills__data">
                                     <div className="skills__title">
                                         <h3 className="skills__name">CSS</h3>
-                                        <span className="skills__number">50%</span>
+                                        <span className="skills__number">80%</span>
                                     </div>
                                     <div className="skills__bar">
                                         <span className="skills__precentage skills__css"> </span>
@@ -70,7 +70,7 @@ const Skills = () => {
                                 <div className="skills__data">
                                     <div className="skills__title">
                                         <h3 className="skills__name">Java Script</h3>
-                                        <span className="skills__number">40%</span>
+                                        <span className="skills__number">70%</span>
                                     </div>
                                     <div className="skills__bar">
                                         <span className="skills__precentage skills__js"> </span>
