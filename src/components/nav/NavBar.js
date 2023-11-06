@@ -69,7 +69,7 @@ const NavBar = () => {
                         </li>
                         <li className="nav__item">
                             <Link activeClass='active-link' spy={true} to="contact" className="nav__link">
-                                <i className="uil uil-envelope nav__icon"></i> Contact Me
+                                <i className="uil uil-envelope nav__icon"></i> Contact
                             </Link>
                         </li>
                     </ul>

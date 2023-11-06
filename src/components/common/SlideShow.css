@@ -51,4 +51,13 @@
     .slideshow{
         padding: 0 3rem;
     }
+
+    .slideshow__button:hover .slideshow__button-icon{
+        font-size: 3rem;
+    }
+    
+    .slideshow__button:active .slideshow__button-icon{
+        font-size: 3rem;
+    }
+
 }

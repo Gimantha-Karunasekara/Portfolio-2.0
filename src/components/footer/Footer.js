@@ -16,13 +16,22 @@ const Footer = () => {
 
                     <ul className="footer__links">
                         <li>
+                            <a href="#home" className="footer__link">Home</a>
+                        </li>
+                        <li>
+                            <a href="#about" className="footer__link">About</a>
+                        </li>
+                        <li>
                             <a href="#qualification" className="footer__link">Qualifications</a>
+                        </li>
+                        <li>
+                            <a href="#skills" className="footer__link">Skills</a>
                         </li>
                         <li>
                             <a href="#portfolio" className="footer__link">Portfolio</a>
                         </li>
                         <li>
-                            <a href="#contact" className="footer__link">Contact Me</a>
+                            <a href="#contact" className="footer__link">Contact</a>
                         </li>
                     </ul>
 
