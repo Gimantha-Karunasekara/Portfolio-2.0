@@ -36,6 +36,7 @@
     transition: all .5s;
 }
 
+
 .portfolio__card--front{
     
     background-color: var(--card-color);
@@ -63,6 +64,11 @@
 
 
 .portfolio__card--back{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-image: linear-gradient(to bottom ,var(--first-color), var(--first-color-lighter));
     transform: rotateY(180deg);
     align-items: center;
@@ -79,19 +85,15 @@
 
 .portfolio__button{
     width: 70%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .portfolio__button:hover{
-    transform: translate(-50%, -55%);
+    transform: translate(0%, -5%);
 }
 
 
 .portfolio__button:active{
-    transform: translate(-50%, -51%);
+    transform: translate(0%, -1%);
 }
 
 

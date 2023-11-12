@@ -26,7 +26,8 @@ const portfolio_data = [
     title: "MyList",
     desc: "Simple to-do list app to keep track of your tasks. Tech stack used : MERN.",
     img: myList_img,
-    github: "https://github.com/Gimantha-Karunasekara/MyList"
+    github: "https://github.com/Gimantha-Karunasekara/MyList",
+    visit: "https://gimantha-my-list.netlify.app/"
     
   },
   {
