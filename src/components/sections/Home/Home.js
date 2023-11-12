@@ -60,8 +60,8 @@ const Home = () => {
                         <h1 className="home__title">Hi, I'm Gimantha</h1>
                         <h3 className="home__subtitle"><span ref={el}></span></h3>
                         <p className="home__description">
-                            Software Engeneering Undergraduate in Curtin Colombo University.
-                            Enthusiast in web development and mobile application development.
+                            Software Engineering Undergraduate at Curtin Colombo University. 
+                            Enthusiast in web and mobile application development.
                         </p>
                         <a href="#contact" className="button button--flex">
                             Contact Me <i className="uil uil-envelope button__icon"></i>
