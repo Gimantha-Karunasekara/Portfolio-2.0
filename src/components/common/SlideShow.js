@@ -54,7 +54,7 @@ const SlideShow = (props) => {
                         return { from: prevState.to, to: prevState.to + 3 };
                     })
                 }
-                if (props.data[slideRange.to + 1]) {
+                else if (props.data[slideRange.to + 1]) {
                     setSlideRange((prevState) => {
                         return { from: prevState.to, to: prevState.to + 2 };
                     })
@@ -108,7 +108,7 @@ const SlideShow = (props) => {
 
     return (
         <div className='slideshow'>
-            <div className='slideshow__button slideshow__button--prev' onClick={() => slidesNavigate("prev")}>
+            <div className='slideshow__button slideshow__button--prev' onClick={() => {slidesNavigate("prev")}}>
                 <i className='slideshow__button-icon uil-angle-left-b'/>
             </div>
             <div className='slideshow__container'>
@@ -124,7 +124,7 @@ const SlideShow = (props) => {
                     />);
                 })}
             </div>
-            <div className='slideshow__button slideshow__button--next' onClick={() => slidesNavigate("next")}>
+            <div className='slideshow__button slideshow__button--next' onClick={() => {slidesNavigate("next")}}>
                 <i className='slideshow__button-icon uil-angle-right-b'/>
             </div>
         </div>
