@@ -9,9 +9,13 @@ import Contact from './components/sections/Contact/Contact';
 import Footer from './components/footer/Footer';
 import ThemeContextProvider from './context/theme-context';
 import { Element } from 'react-scroll';
+import { useEffect } from 'react';
 
 function App() {
 
+  useEffect(() => {
+    document.body.classList.add('dark-theme');
+  }, [])
 
   return (
       <ThemeContextProvider>

@@ -25,6 +25,7 @@
 .nav__toggle{
     color: var(--title-color);
     font-weight: var(--font-semiBold-weight);
+    text-shadow: 0 5px 30px var(--shadow-color);
 }
 
 .nav__btns{

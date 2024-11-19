@@ -198,6 +198,7 @@ img{
 
 .section__title,.section__subtitle{
     text-align: center;
+    text-shadow: 0 5px 30px var(--shadow-color);
 }
 
 .container{

@@ -28,6 +28,7 @@
     color: var(--first-color-alt);
     transform: scale(120%);
     transition: 0.5s;
+    text-shadow: 0 5px 10px var(--shadow-color);
 }
 
 .home__img{
@@ -42,6 +43,7 @@
 .home__title{
     margin-top: 1rem;
     font-size: var(--big-font-size);
+    text-shadow: 0 5px 30px var(--shadow-color);
 }
 
 .home__subtitle{
@@ -62,10 +64,12 @@
 .home__scroll-button{
     color: var(--first-color);
     transition: 0.3s;
+
 }
 
 .home__scroll-button:hover{
     transform: translateY(0.25rem);
+    text-shadow: 0 5px 30px var(--shadow-color);
 }
 
 .home__scroll-mouse{

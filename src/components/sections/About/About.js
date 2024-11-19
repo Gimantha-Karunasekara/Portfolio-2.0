@@ -15,7 +15,7 @@ const About = () => {
                 <img src={about_img} alt="" className="about__img"/>
                 <div className="about__data">
                     <p className="about__description">
-                        I'm Gimantha, an enthusiastic individual embarking on a coding journey as an aspiring Software Developer. With proficiency in Java, JavaScript, Flutter, React, ReactNative, Node, Python, Docker, Git, Postman, and more, I'm well-equipped to tackle diverse challenges. Friendly and collaborative by nature, I'm always up for a coding adventure and committed to constant learning, striving to enhance my skills and stay up to date with new technologies.
+                        I'm Gimantha Karunasekara, an enthusiastic individual embarking on a coding journey as an aspiring Software Developer. With proficiency in Java, JavaScript, Flutter, React, ReactNative, Node, Python, Docker, Git, Postman, and more, I'm well-equipped to tackle diverse challenges. Friendly and collaborative by nature, I'm always up for a coding adventure and committed to constant learning, striving to enhance my skills and stay up to date with new technologies.
                     </p>
 
                     <div className="about__info">
