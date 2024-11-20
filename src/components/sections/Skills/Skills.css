@@ -69,19 +69,11 @@
 }
 
 .skills__c{
-    width: 50%;
+    width: 40%;
 }
 
 .skills__python{
     width: 50%;
-}
-
-.skills__html{
-    width: 80%;
-}
-
-.skills__css{
-    width: 80%;
 }
 
 .skills__js{
@@ -89,11 +81,19 @@
 }
 
 .skills__android{
-    width: 60%;
+    width: 50%;
 }
 
 .skills__react{
+    width: 60%;
+}
+
+.skills__flutter{
     width: 50%;
+}
+
+.skills__spring{
+    width: 40%;
 }
 
 .skills__close .skills__list{

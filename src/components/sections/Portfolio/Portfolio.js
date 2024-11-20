@@ -19,7 +19,7 @@ const portfolio_data = [
   {
     key: "001",
     title: "CurtinAssist",
-    desc: "CurtinAssist is a centralized communication platform for university students and staff.",
+    desc: "CurtinAssist is a centralized communication platform for university students and staff. Created using Flutter, Spring Boot and PostgreSQL.",
     img: curtin_assist_img,
     visit: "https://www.linkedin.com/posts/vinukatukorala_curtinassist-studentsupportsystem-capstonecomputingproject-activity-7199472259936210944-jw6B?utm_source=share&utm_medium=member_desktop"
   },
