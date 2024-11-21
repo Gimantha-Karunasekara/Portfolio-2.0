@@ -112,7 +112,7 @@ const Qualifications = () => {
                 <span className="qualification__subtitle">Curtin Colombo</span>
                 <div className="qualification__date">
                   <i className="uil uil-calendar-alt"></i>
-                  2021 - Present
+                  2021 - 2024
                 </div>
               </div>
 
