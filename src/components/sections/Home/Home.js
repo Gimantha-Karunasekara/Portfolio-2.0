@@ -15,7 +15,7 @@ const Home = () => {
     React.useEffect(() => {
         const options = {
             strings: [
-                'Undergraduate',
+                'Software Engineering Graduate',
                 'Software Developer'
             ],
             typeSpeed: 50,
@@ -60,7 +60,7 @@ const Home = () => {
                         <h1 className="home__title">Hi, I'm Gimantha</h1>
                         <h3 className="home__subtitle"><span ref={el}></span></h3>
                         <p className="home__description">
-                            Software Engineering Undergraduate at Curtin Colombo University. 
+                            Software Engineering Graduate from Curtin Colombo University. 
                             Enthusiast in web and mobile application development.
                         </p>
                         <a href="#contact" className="button button--flex">
