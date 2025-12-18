@@ -16,7 +16,7 @@ const Home = () => {
         const options = {
             strings: [
                 'Software Engineering Graduate',
-                'Software Developer'
+                'Junior Software Engineer'
             ],
             typeSpeed: 50,
             backSpeed: 50,

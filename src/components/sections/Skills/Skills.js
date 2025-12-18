@@ -52,7 +52,7 @@ const Skills = () => {
                                 <div className="skills__data">
                                     <div className="skills__title">
                                         <h3 className="skills__name">Spring Boot</h3>
-                                        <span className="skills__number">40%</span>
+                                        <span className="skills__number">60%</span>
                                     </div>
                                     <div className="skills__bar">
                                         <span className="skills__precentage skills__spring"> </span>

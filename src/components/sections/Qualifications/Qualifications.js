@@ -33,7 +33,37 @@ const Qualifications = () => {
 
         <div className="qualification__sections">
           {!showEdu && <div className={`qualification__content ${!showEdu && "qualification__active"}`} data-content id="work">
-            <h3 className="noData__msg">Nothing to show here.</h3>
+            <div className="qualification__data">
+              <div>
+                <h3 className="qualification__title">Intern - Software Engineer</h3>
+                <span className="qualification__subtitle">Convergence Lanka</span>
+                <div className="qualification__date">
+                  <i className="uil uil-calendar-alt"></i>
+                  {' '}
+                  2025
+                </div>
+              </div>
+
+              <div>
+                <span className="qualification__point"></span>
+                <span className="qualification__line"></span>
+              </div>
+            </div>
+             <div className="qualification__data">
+              <div></div>
+              <div>
+                <span className="qualification__point"></span>
+              </div>
+              <div>
+                <h3 className="qualification__title">Junior - Software Engineer</h3>
+                <span className="qualification__subtitle">Convergence Lanka</span>
+                <div className="qualification__date">
+                  <i className="uil uil-calendar-alt"></i>
+                  {' '}
+                  2025
+                </div>
+              </div>
+            </div>
           </div>}
           {showEdu && <div className={`qualification__content ${showEdu && "qualification__active"}`} data-content id="education">
 
@@ -43,6 +73,7 @@ const Qualifications = () => {
                 <span className="qualification__subtitle">Esoft Metro Collage</span>
                 <div className="qualification__date">
                   <i className="uil uil-calendar-alt"></i>
+                  {' '}
                   2018
                 </div>
               </div>
@@ -64,6 +95,7 @@ const Qualifications = () => {
                 <span className="qualification__subtitle">Esoft Metro Collage</span>
                 <div className="qualification__date">
                   <i className="uil uil-calendar-alt"></i>
+                  {' '}
                   2018
                 </div>
               </div>
@@ -77,6 +109,7 @@ const Qualifications = () => {
                 <span className="qualification__subtitle">Esoft Metro Collage</span>
                 <div className="qualification__date">
                   <i className="uil uil-calendar-alt"></i>
+                  {' '}
                   2019
                 </div>
               </div>
@@ -100,6 +133,7 @@ const Qualifications = () => {
                 <span className="qualification__subtitle">Esoft Metro Collage</span>
                 <div className="qualification__date">
                   <i className="uil uil-calendar-alt"></i>
+                  {' '}
                   2019
                 </div>
               </div>
@@ -112,6 +146,7 @@ const Qualifications = () => {
                 <span className="qualification__subtitle">Curtin Colombo</span>
                 <div className="qualification__date">
                   <i className="uil uil-calendar-alt"></i>
+                  {' '}
                   2021 - 2024
                 </div>
               </div>
